@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- medium and big Flip Tile attributes -->
+   <declare-styleable name="Tile">
+       <attr name="Title" format="string" />
+       <attr name="TitleSize" format="integer" />
+       <attr name="TitleColor" format="color" />
+       <attr name="TextColor" format="color" />
+       <attr name="TitleTextStyle">
+           <enum name="bold" value="1" />
+           <enum name="italic" value="2" />
+           <enum name="italic_bold" value="3" />
+       </attr>
+       <attr name="BackTitle" format="string" />
+       <attr name="BackContent" format="string" />
+       <attr name="BackContentSize" format="integer" />
+       <attr name="BackContentColor" format="color" />
+       <attr name="BackContentTextStyle">
+           <enum name="bold" value="1" />
+           <enum name="italic" value="2" />
+           <enum name="bold_italic" value="3" />
+       </attr>
+       <attr name="WideContent1" format="string" />
+       <attr name="WideContent2" format="string" />
+       <attr name="BackgroundImage" format="reference" />
+       <attr name="IconImage" format="reference" />
+       <attr name="ImageScaleType">
+  			<enum name="center" value="1" />
+  			<enum name="center_crop" value="2" />
+  			<enum name="center_inside" value="3" />
+  			<enum name="fit_center" value="4" />
+  			<enum name="fit_end" value="5" />
+  			<enum name="fit_start" value="6" />
+  			<enum name="fit_xy" value="7" />
+  			<enum name="matrix" value="8" />
+	   </attr>
+	   <attr name="BackgroundColor" format="color" />
+       <attr name="BackBackgroundColor" format="color" />
+       <attr name="Delay" format="integer" />
+   </declare-styleable>
+   <!-- end of medium and big Flip Tile attributes -->
+</resources>

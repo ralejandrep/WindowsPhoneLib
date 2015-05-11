@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/BITRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F00"
+    android:padding="19dp" >
+
+    <RelativeLayout
+        android:id="@+id/BITBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:id="@+id/BITTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="Title"
+            android:textSize="18sp" />
+
+        <ViewFlipper
+            android:id="@+id/BITCounterFlipper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:flipInterval="2000" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18"
+                    android:textSize="48sp"
+                    android:textStyle="bold" />
+
+    </ViewFlipper>
+
+        <ImageView
+            android:id="@+id/BITIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/BITCounterFlipper"
+            android:layout_alignTop="@+id/BITCounterFlipper"
+            android:layout_marginRight="13dp"
+            android:layout_toLeftOf="@+id/BITCounterFlipper"
+            android:src="@drawable/ic_launcher" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/BITContainerContents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/BITWideContent1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:text="Wide Content 1"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/BITWideContent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BITWideContent1"
+            android:text="Wide Content 2" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
